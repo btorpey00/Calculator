@@ -14,7 +14,14 @@ buttons.forEach(button => {
         }
         //Number button is clicked
         if(button.classList[1] == 'numButton') {
-        currentNumber += button.id;
+            if (previousNumber.slice(-1) == '=') {
+                currentNumber = button.id;
+                previousNumber = '';
+                previousDisplay.textContent = previousNumber;
+            }
+            else {
+                currentNumber += button.id;
+            }
         }
         //Decimal button is clicked
         else if(button.id == 'decimal') {
