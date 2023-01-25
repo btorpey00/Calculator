@@ -32,7 +32,7 @@ h1 {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    height: 125px;
+    height: 100px;
     text-align: end;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -60,7 +60,12 @@ h1 {
     font-size: 35px;
     border-radius: 5px;
     border-color: darkblue;
-    color: darkblue;
+    color: rgb(121, 210, 245);
+    background-color: rgb(2, 2, 86);
+}
+
+#buttons button:active {
+    transform: translateY(2px);
 }
 
 #buttons #delete {
